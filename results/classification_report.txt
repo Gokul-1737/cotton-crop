@@ -1,0 +1,11 @@
+                      precision    recall  f1-score   support
+
+Alternaria Leaf Spot     1.0000    0.8846    0.9388        26
+    Bacterial Blight     0.6667    0.3636    0.4706        33
+       Fusarium Wilt     0.8679    0.9200    0.8932        50
+        Healthy Leaf     1.0000    1.0000    1.0000        50
+   Verticillium Wilt     0.7097    0.9362    0.8073        47
+
+            accuracy                         0.8495       206
+           macro avg     0.8489    0.8209    0.8220       206
+        weighted avg     0.8483    0.8495    0.8376       206

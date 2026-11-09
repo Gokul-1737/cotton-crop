@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #166534;
+  --color-primary-light: #16a34a;
+  --color-secondary: #DCFCE7;
+  --color-bg: #F8FAF8;
+  --color-text: #1F2937;
+  --color-card: #ffffff;
+  --color-border: #E5E7EB;
+  --color-muted: #6B7280;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  margin: 0;
+}
+
+.sidebar {
+  width: 260px;
+  min-height: 100vh;
+  background: var(--color-primary);
+  flex-shrink: 0;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #f1f1f1; }
+::-webkit-scrollbar-thumb { background: #c4c4c4; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #a0a0a0; }
+
+/* Transition */
+.nav-link { transition: background 0.15s, color 0.15s; }
+
+/* Loading spinner */
+@keyframes spin { to { transform: rotate(360deg); } }
+.spinner { animation: spin 0.8s linear infinite; }
+
+/* File drop zone active state */
+.drop-active { border-color: var(--color-primary) !important; background: var(--color-secondary) !important; }

@@ -1,0 +1,45 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Node.js
+node_modules/
+frontend/node_modules/
+frontend/dist/
+
+# Backend runtime files
+backend/uploads/*
+!backend/uploads/.gitkeep
+backend/predictions.db
+
+# Large external dataset archives (>100MB GitHub limit)
+*.zip
+*.tar.gz
+data/external/*
+!data/external/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+data/cotton/
+data/Cotton-Original-Augmented/
+data/A Dataset of Cotton Leaf Images for Disease Detection and Classification/
+data/SAR-CLD-2024 A Comprehensive Dataset for Cotton Leaf Disease Detection/
+
+# OS metadata
+.DS_Store
+Thumbs.db
